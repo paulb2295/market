@@ -1,6 +1,7 @@
 package com.market.connnect.models.entities;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 
@@ -16,14 +17,18 @@ public class Costumer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @NotBlank
     @Column(name = "first_name")
     private String firstName;
+    @NotBlank
     @Column(name = "last_name")
     private String lastName;
+    @NotBlank
     @Column(unique = true)
     private String email;
     @Column(name = "birth_day")
     private LocalDate birthday;
+    @NotBlank
     @Column(name = "address")
     private String address;
     @Column(name = "created_at")
