@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ConnnectApplication {
+public class ConnectApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ConnnectApplication.class, args);
+		SpringApplication.run(ConnectApplication.class, args);
 	}
 
 }
